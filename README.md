@@ -46,7 +46,7 @@ The game is built using HTML5, CSS and Javascript. There are dependencies on...
 * Google fonts
 
 
-###Acknowledgements
+### Acknowledgements
 
 The project is based around the starter project supplied by Udacity at ...
 
