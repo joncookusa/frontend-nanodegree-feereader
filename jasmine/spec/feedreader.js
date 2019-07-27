@@ -68,8 +68,8 @@ $(function () {
 
         it('should include at least one entry within the feed container', (done) => {
             // Test the childElementCount property of the .feed container. It should be more than zero
-            let childCount = document.querySelector('.feed').childElementCount;
-            expect(childCount).toBeGreaterThan(0);
+            let entry = document.querySelector('.feed .entry');
+            expect(entry).not.toBe(null);
             done();
         });
     });
