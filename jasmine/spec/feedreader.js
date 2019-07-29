@@ -67,9 +67,14 @@ $(function () {
         });
 
         it('should include at least one entry within the feed container', (done) => {
-            // Test the childElementCount property of the .feed container. It should be more than zero
-            let entry = document.querySelector('.feed .entry');
-            expect(entry).not.toBe(null);
+            // Grab the feed container element
+            let feed = document.querySelector('.feed');
+
+            // Grab an array of elements from within the feed element with a class of 'entry'.
+            let entries = feed.getElementsByClassName('entry');
+
+            // Test to ensure that the length of the entries array is greater than zero. i.e. there is at least one entry
+            expect(entries.length).toBeGreaterThan(0);
             done();
         });
     });
